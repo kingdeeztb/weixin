@@ -70,8 +70,8 @@ Component({
     },
     showQrcode() {
       wx.previewImage({
-        urls: ['https://image.weilanwl.com/color2.0/zanCode.jpg'],
-        current: 'https://image.weilanwl.com/color2.0/zanCode.jpg' // 当前显示图片的http链接      
+        urls: ['http://tiebapic.baidu.com/forum/w%3D580%3B/sign=15e980619118367aad897fd51e488ad4/503d269759ee3d6df043ca8354166d224e4adef5.jpg'],
+        current: 'http://tiebapic.baidu.com/forum/w%3D580%3B/sign=15e980619118367aad897fd51e488ad4/503d269759ee3d6df043ca8354166d224e4adef5.jpg' // 当前显示图片的http链接      
       })
     },
   }
