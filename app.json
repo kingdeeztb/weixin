@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/setting/setting",
+    "pages/bar/bar",
+    "pages/wode/wode",
+    "pages/news/news",
+    "pages/localnews/localnews",
+    "pages/about/about/about",
+    "pages/about/home/home"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#42c642",
+    "navigationBarBackgroundColor": "#42c642",
+    "navigationBarTitleText": "芷若萱姿+",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首 页",
+        "iconPath": "/images/png/Dc18.png",
+        "selectedIconPath": "/images/png/Dc18.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "热点资讯",
+        "iconPath": "/images/png/Dc24.png",
+        "selectedIconPath": "/images/png/Dc25.png"
+      },
+      {
+        "pagePath": "pages/localnews/localnews",
+        "text": "本地新闻",
+        "iconPath": "/images/png/Dc21.png",
+        "selectedIconPath": "/images/png/Dc8.png"
+      },
+      {
+        "pagePath": "pages/about/home/home",
+        "text": "我 的",
+        "iconPath": "/images/png/Dc22.png",
+        "selectedIconPath": "/images/png/Dc2.png"
+      }
+    ]
+  }
+}

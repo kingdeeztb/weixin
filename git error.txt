@@ -1,0 +1,4 @@
+fatal: not a git repository (or any of the parent directories): .git
+
+
+在命令行 输入 git init 然后回车就好了
