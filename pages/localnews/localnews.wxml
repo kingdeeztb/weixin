@@ -146,11 +146,6 @@
   </view>
 </view>
 
-<!-- <view class="cu-bar bg-white solid-bottom margin-top">
-  <view class='action'>
-    <text class='cuIcon-titles text-orange '></text> 推荐新闻
-  </view>
-</view> -->
 <view class="cu-card article {{isCard?'no-card':'no-card'}}">
   <view class="cu-item shadow">
     <view class="title">
