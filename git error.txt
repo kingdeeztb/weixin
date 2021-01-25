@@ -2,3 +2,5 @@ fatal: not a git repository (or any of the parent directories): .git
 
 
 在命令行 输入 git init 然后回车就好了
+
+12686b161946c3eb47c621c76039c586560242b3
