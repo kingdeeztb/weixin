@@ -46,7 +46,7 @@ Page({
       },
       success: function (res) {
         //  console.log(res.data.T1348647853363[0])
-        for (let index = 0; index < 140; index++) {
+        for (let index = 0; index < 70; index++) {
           var long_data = res.data.T1348647853363[index];
           var tmpnewsList = that.data.newsList;
           var tmpArr;
@@ -62,7 +62,7 @@ Page({
           // console.log(that.data.newsList)
           tmpArr = that.data.newsList;
           tmpArr.push.apply(tmpArr, tmpnewsList);
-          console.log(tmpArr);
+          // console.log(tmpArr);
           that.setData({
             newsList2: tmpArr
           })
