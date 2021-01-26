@@ -31,7 +31,8 @@ Page({
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
     }],
     newsList: [],
-    newsList2: []
+    newsList2: [],
+    newsList3:[]
   },
 
   onLoad() {
