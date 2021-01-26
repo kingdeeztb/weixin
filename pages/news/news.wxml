@@ -24,7 +24,7 @@
 </view>
 <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true"
   interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
-  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}" >
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
     <view class="swiper-item">
       <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
       <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover"
@@ -49,7 +49,7 @@
 </view>
 <!-- 开始循环 -->
 <view wx:for="{{newsList2}}" wx:key="{{index}}">
-  <view class="cu-card article {{isCard?'no-card':'no-card'}}">
+  <view class="cu-card article {{isCard?'no-card':'no-card'}}" bindtap="detailsHandler" data-newsid="{{item.id }}">
     <view class="cu-item shadow">
       <view class="title">
         <view class="text-cut">{{item.title}}</view>

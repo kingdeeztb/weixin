@@ -1,0 +1,21 @@
+<!--pages/news-details/news_details.wxml-->
+<!--pages/news/news-details/news-details.wxml-->
+<view class="news-detail-container">
+  <image class="head-img" src="../{{ currentNews.image }}"></image>
+  <view class="author-time">
+    <image class="author-avatar" src="../{{currentNews.icon}}"></image>
+    <text class="author-name">{{ currentNews.author }}</text>
+    <text class="const-text">发表于</text>
+    <text class="time">{{ currentNews.time }}</text>
+  </view>
+  <text class="title">{{ currentNews.title }}</text>
+  <view class="tool">
+    <!-- <view class="circle-img">
+      <image src="../../../image/sch.png" ></image> 
+      <image src="../../../image/sc.png" ></image> 
+      <image class="share-img" src="../../../image/fx.png"></image>
+    </view> -->
+    <view class="horizon"></view>
+    <text class="detail">{{ currentNews.desc }}</text>
+  </view>
+</view>

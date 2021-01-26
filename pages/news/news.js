@@ -32,7 +32,7 @@ Page({
     }],
     newsList: [],
     newsList2: [],
-    newsList3:[]
+    newsList3: []
   },
 
   onLoad() {
@@ -47,7 +47,7 @@ Page({
       },
       success: function (res) {
         //  console.log(res.data.T1348647853363[0])
-        for (let index = 0; index < 70; index++) {
+        for (let index = 0; index < 6; index++) {
           var long_data = res.data.T1348647853363[index];
           var tmpnewsList = that.data.newsList;
           var tmpArr;
@@ -74,6 +74,12 @@ Page({
   DotStyle(e) {
     this.setData({
       DotStyle: e.detail.value
+    })
+  },
+  detailsHandler(event) {
+    var currentId = event.currentTarget.dataset.newsid;
+    wx.navigateTo({
+      url: '../news_details/news_details?id=' + currentId,
     })
   },
   // cardSwiper

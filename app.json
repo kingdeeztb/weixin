@@ -7,8 +7,9 @@
     "pages/news/news",
     "pages/localnews/localnews",
     "pages/about/about/about",
-    "pages/about/home/home"
-
+    "pages/about/home/home",
+    "pages/news_details/news_details",
+    "pages/data/data"
   ],
   "window": {
     "backgroundTextStyle": "dark",
