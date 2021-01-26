@@ -30,41 +30,42 @@ Page({
       type: 'image',
       url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
     }],
+    newsList: [],
+    newsList2: []
   },
+
   onLoad() {
-    this.towerSwiper('swiperList');
     // 初始化towerSwiper 传已有的数组名即可
+    this.towerSwiper('swiperList');
     //调用接口
     var that = this //不要漏了这句，很重要
     wx.request({
       url: 'https://c.m.163.com/nc/article/headline/T1348647853363/0-140.html', //这里填写你的接口路径
-      header: { //这里写你借口返回的数据是什么类型，这里就体现了微信小程序的强大，直接给你解析数据，再也不用去寻找各种方法去解析json，xml等数据了
+      header: {
         'Content-Type': 'application/json'
       },
-      data: { //这里写你要请求的参数
-        x: '',
-        y: ''
-      },
       success: function (res) {
-        //这里就是请求成功后，进行一些函数操作
-        console.log(res.data.T1348647853363[0])
-
-        //定义数组,循环取资讯信息
-        var array = []
-        for (let index = 0; index < 2; index++) {
-          data: {
-            const element = array[index];
-            console.log(res.data.T1348647853363[index])
-            that.setData({
-              digest: res.data.T1348647853363[index].digest,
-              title: res.data.T1348647853363[index].title,
-              imgsrc: res.data.T1348647853363[index].imgsrc,
-              source: res.data.T1348647853363[index].source,
-              ptime: res.data.T1348647853363[index].ptime
-              //res代表success函数的事件对，data是固定的，fengxiang是是上面json数据中fengxiang
-            })
-          }
-
+        //  console.log(res.data.T1348647853363[0])
+        for (let index = 0; index < 8; index++) {
+          var long_data = res.data.T1348647853363[index];
+          var tmpnewsList = that.data.newsList;
+          var tmpArr;
+          that.setData({
+            newsList: [{
+              title: long_data.title,
+              digest: long_data.digest,
+              imgsrc: long_data.imgsrc,
+              source: long_data.source,
+              ptime: long_data.ptime
+            }]
+          })
+          // console.log(that.data.newsList)
+          tmpArr = that.data.newsList;
+          tmpArr.push.apply(tmpArr, tmpnewsList);
+          console.log(tmpArr);
+          that.setData({
+            newsList2: tmpArr
+          })
         }
       }
     })
