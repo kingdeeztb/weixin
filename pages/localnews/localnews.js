@@ -11,6 +11,11 @@ Page({
   },
   newsList: [],
   newsList2: [],
+  onPullDownRefresh: function () {
+    setTimeout(() => {
+      wx.stopPullDownRefresh()
+    }, 1000)
+  },
   onLoad() {
     //调用接口
     var that = this //不要漏了这句，很重要

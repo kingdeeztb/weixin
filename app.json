@@ -16,7 +16,8 @@
     "backgroundColor": "#42c642",
     "navigationBarBackgroundColor": "#42c642",
     "navigationBarTitleText": "网易新闻",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {

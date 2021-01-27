@@ -76,6 +76,11 @@ Page({
       DotStyle: e.detail.value
     })
   },
+  onPullDownRefresh: function () {
+    setTimeout(() => {
+      wx.stopPullDownRefresh() //真机测试不回弹处理方式.
+    }, 1000)
+  },
   detailsHandler(event) {
     var currentId = event.currentTarget.dataset.newsid;
     wx.navigateTo({

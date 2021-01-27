@@ -16,6 +16,7 @@ Component({
     })
     let i = 0;
     numDH();
+
     function numDH() {
       if (i < 20) {
         setTimeout(function () {
@@ -67,6 +68,11 @@ Component({
       this.setData({
         modalName: null
       })
+    },
+    onPullDownRefresh: function () {
+      setTimeout(() => {
+        wx.stopPullDownRefresh()
+      }, 1000)
     },
     showQrcode() {
       wx.previewImage({
