@@ -40,10 +40,10 @@ Page({
         })
       }
     })
-    console.log("我们获取的id:" + this.data.urldata[0].id)
+    // console.log("我们获取的id:" + this.data.urldata[0].id)
     //调用接口
     var wangba = this.data.urldata[0].id
-    console.log("wangba no." + wangba)
+    // console.log("wangba no." + wangba)
     //怎么吧王八传进去,获取对应的新闻?
 
 
@@ -57,10 +57,11 @@ Page({
       },
       success: function (res) {
         // console.log("新闻内容列表:"+ res.data.T1348647853363[0].title)
-        for (let index = 0; index < 6; index++) {
+        for (let index = 0; index < 70; index++) {
           var long_data = res.data.T1348647853363[index];
           var tmpnewsList = that.data.newsList;
           var tmpArr;
+          // console.log(index)
           that.setData({
             newsList: [{
               id: 0 + index,
@@ -77,59 +78,70 @@ Page({
           // console.log("对应的新闻列表:"+that.data.newsList.title)
           tmpArr = that.data.newsList;
           tmpArr.push.apply(tmpArr, tmpnewsList);
-          //  console.log(tmpArr);
+          //  console.log(tmpArr[0]);
           that.setData({
             endnewsdata: tmpArr
           })
           //  console.log(tmpArr[0])
-          var tmpheji = tmpArr;
-          // var tmpnewsheji = that.data.newsheji;
-          //  tmpheji.push.apply(tmpheji, tmpnewsheji);
-          //  console.log(tmpheji)
+
+
+
           that.setData({
-            newsheji: tmpheji
+            newshejiji: that.data.endnewsdata
           })
 
-          // console.log("新闻newsheji:"+that.data.newsheji[0].id+that.data.newsheji[0].title)//存放到newsheji数组中,生成新数组.
-
-
-
-          // console.log("caonima:"+caonimaid+":"+caonima)
-          that.data.newsheji.forEach(item => {
-            console.log("itemid" + item.id + item.title)
-            var les = that.data.newsheji.length
-            console.log(les)
-            var index = options.id
-            if (options.id == item.id) { // options.id 就是首页传过来的id，接下来循环找到id所匹配的数据就可以进行渲染啦！
-              that.setData({
-
-                id: that.data.newsheji[index].id,
-                newsdetail: that.data.newsheji[index].digest,
-                newsurl: that.data.newsheji[index].url,
-                newsimg: that.data.newsheji[index].imgsrc,
-                newsptime: that.data.newsheji[index].ptime,
-                newssource: that.data.newsheji[index].source,
-                title: that.data.newsheji[index].title,
-                //拼接出新闻的链接地址,并写入新的urldata数组
-                /*digest: "文|王珍一编辑|孙大圣2001年，北京的一位语文老师在翻看《瑞丽》杂志时，发现《瑞丽》要举办模特大赛，他觉得自己的一位女学生特别适合参加，于是他鼓励这位女学生去"
-id: 5
-imgsrc: "http://cms-bucket.ws.126.net/2021/0128/4d55547bp00qnmhbm006kc0009c0070c.png"
-postid: "G1D658620537TCED"
-ptime: "2021-01-28 10:28:12"
-source: "王珍一的江湖#"
-title: "未婚生女、机场露胸 这位“贵圈奇女”上位史如此精彩"
-url: "https://3g.163.com/news/article/G1D658620537TCED.html"
-url_3w: "https://3g.163.com/news/article/G1D658620537TCED.html"*/
-
-              })
-            }
-          })
-
+          // console.log("新闻newsheji:" + that.data.newsheji[0].id + that.data.newsheji[0].title) //存放到newsheji数组中,生成新数组.   
         }
-        // console.log(that.data.endnewsdata.ptime)
+
+        //形成新数组
+        let deviceLists = that.data.endnewsdata;
+        deviceLists = deviceLists.concat({
+          id: deviceLists[0].id,
+          newsdetail: deviceLists[0].digest,
+          newsurl: deviceLists[0].url,
+          newsimg: deviceLists[0].imgsrc,
+          newsptime: deviceLists[0].ptime,
+          newssource: deviceLists[0].source,
+          title: deviceLists[0].title,
+        })
+        console.log(deviceLists)
+
+        that.setData({
+          newsheji: deviceLists
+        })
+        var index = options.id
+        console.log(that.data.newsheji[index].id)//获取新闻列表页对应的详细页ID
+        var newid=that.data.newsheji[index].id //定义要取得数组序号,代入到下一步当中
+        
+        //新数组去重
+        // var result = [];
+        // var obj = [];
+        // for (var i = 0; i < deviceLists.length; i++) {
+        //   if (!obj[deviceLists[i].deviceId]) {
+        //     result.push(deviceLists[i]);
+        //     obj[deviceLists[i].deviceId] = true;
+        //   }
+        // }
+        // console.log(result);
+
+
+        //最后一步:通过遍历数组,呈现出详细页内容
+        that.data.newsheji.forEach(item => {
+          // console.log(that.data.newsheji[0].title, )
+          if (options.id == item.id) { // options.id 就是首页传过来的id，接下来循环找到id所匹配的数据就可以进行渲染啦！
+            that.setData({
+              id: that.data.newsheji[newid].id,
+              newsdetail: that.data.newsheji[newid].digest,
+              newsurl: that.data.newsheji[newid].url,
+              newsimg: that.data.newsheji[newid].imgsrc,
+              newsptime: that.data.newsheji[newid].ptime,
+              newssource: that.data.newsheji[newid].source,
+              title: that.data.newsheji[newid].title,
+            })
+          }
+        })
+
       }
-
-
 
     })
 
