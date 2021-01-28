@@ -131,7 +131,7 @@
 
 <!-- 开始循环 -->
 <view wx:for="{{newsList2}}" wx:key="{{index}}">
-  <view class="cu-card article {{isCard?'no-card':'no-card'}}">
+  <view class="cu-card article {{isCard?'no-card':'no-card'}}" bindtap="detailsHandler" data-newsid="{{item.id}}">
     <view class="cu-item shadow">
       <view class="title">
         <view class="text-cut">{{item.title}}</view>
