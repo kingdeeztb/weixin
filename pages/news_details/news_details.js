@@ -57,7 +57,7 @@ Page({
       },
       success: function (res) {
         // console.log("新闻内容列表:"+ res.data.T1348647853363[0].title)
-        for (let index = 0; index < 140; index++) {
+        for (let index = 0; index < 50; index++) {
           var long_data = res.data.T1348647853363[index];
           var tmpnewsList = that.data.newsList;
           var tmpArr;

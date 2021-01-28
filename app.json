@@ -15,7 +15,7 @@
     "backgroundTextStyle": "dark",
     "backgroundColor": "#42c642",
     "navigationBarBackgroundColor": "#42c642",
-    "navigationBarTitleText": "网易新闻",
+    "navigationBarTitleText": "晴雨天气",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
   },

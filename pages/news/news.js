@@ -47,7 +47,7 @@ Page({
       },
       success: function (res) {
         // console.log(res.data.T1348647853363[5])
-        for (let index = 0; index < 140; index++) {
+        for (let index = 0; index < 50; index++) {
           var long_data = res.data.T1348647853363[index];
           var tmpnewsList = that.data.newsList;
           var tmpArr;
