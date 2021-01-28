@@ -1,21 +1,29 @@
 <!--pages/news-details/news_details.wxml-->
 <!--pages/news/news-details/news-details.wxml-->
+<!-- <import src="../wxParse/wxParse.wxml"/> -->
+<!-- <template is="wxParse" data="{{wxParseData:article.nodes}}"/> -->
 <view class="news-detail-container">
-  <image class="head-img" src="../{{ currentNews.image }}"></image>
+  <image class="head-img" src="{{newsimg}}"></image>
   <view class="author-time">
-    <image class="author-avatar" src="../{{currentNews.icon}}"></image>
-    <text class="author-name">{{ currentNews.author }}</text>
+    <!-- <image class="author-avatar" src="../{{currentNews.icon}}"></image> -->
+    <text class="author-name">{{ newssource }}</text>
     <text class="const-text">发表于</text>
-    <text class="time">{{ currentNews.time }}</text>
+    <text class="time">{{ newsptime}}</text>
   </view>
-  <text class="title">{{ currentNews.title }}</text>
+  <text class="title">{{title }}</text>
+  <view class="horizon"></view>
   <view class="tool">
+
     <!-- <view class="circle-img">
       <image src="../../../image/sch.png" ></image> 
       <image src="../../../image/sc.png" ></image> 
       <image class="share-img" src="../../../image/fx.png"></image>
     </view> -->
-    <view class="horizon"></view>
-    <text class="detail">{{ currentNews.desc }}</text>
+
+    <text class="detail">文章内容:{{ newsdetail }}</text>
   </view>
+  <view class='detail'>原文链接:{{newsurl}}</view>
 </view>
+<!-- <view>
+    <view>{{newsdetail}}</view>
+</view> -->
