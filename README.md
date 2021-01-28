@@ -19,8 +19,5 @@
 ![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165559_com.tencent.mm.jpg)
 ![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165603_com.tencent.mm.jpg)
 ![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165606_com.tencent.mm.jpg)
-![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165614_com.tencent.mm.jpg)
-![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165620_com.tencent.mm.jpg)
-![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165624_com.tencent.mm.jpg)
 # 结束语
 感谢大家的支持!感谢对"芷若萱姿+"微信天气小程序的支持.未尽事宜,请联系作者.
