@@ -110,8 +110,8 @@ Page({
           newsheji: deviceLists
         })
         var index = options.id
-        console.log(that.data.newsheji[index].id)//获取新闻列表页对应的详细页ID
-        var newid=that.data.newsheji[index].id //定义要取得数组序号,代入到下一步当中
+        console.log(that.data.newsheji[index].id) //获取新闻列表页对应的详细页ID
+        var newid = that.data.newsheji[index].id //定义要取得数组序号,代入到下一步当中
 
         //新数组去重
         // var result = [];
