@@ -57,7 +57,7 @@ Page({
       },
       success: function (res) {
         // console.log("新闻内容列表:"+ res.data.T1348647853363[0].title)
-        for (let index = 0; index < 70; index++) {
+        for (let index = 0; index < 140; index++) {
           var long_data = res.data.T1348647853363[index];
           var tmpnewsList = that.data.newsList;
           var tmpArr;
@@ -112,7 +112,7 @@ Page({
         var index = options.id
         console.log(that.data.newsheji[index].id)//获取新闻列表页对应的详细页ID
         var newid=that.data.newsheji[index].id //定义要取得数组序号,代入到下一步当中
-        
+
         //新数组去重
         // var result = [];
         // var obj = [];
