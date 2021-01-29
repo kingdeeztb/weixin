@@ -1,7 +1,7 @@
 <scroll-view scroll-y class="scrollPage">
   <view class="UCenter-bg">
     <image src="/images/logo.png" class="png" mode="widthFix"></image>
-    <view class="text-xl">芷若萱姿天气
+    <view class="text-xl">青柚天气
       <text class="text-df">v2.0</text>
     </view>
     <view class="margin-top-sm">
@@ -63,6 +63,19 @@
         <text class="text-grey">Bug测试</text>
       </navigator>
     </view>
+
+    <view class="cu-item arrow">
+    <official-account></official-account>
+    <navigator class="content" url="/pages/about/log/log" hover-class="none">
+      <text class="cuIcon-formfill text-green"></text>
+      <text class="text-grey">扫码显示</text>
+    </navigator>
   </view>
+
+
+  </view>
+
+
+
   <view class="cu-tabbar-height"></view>
 </scroll-view>

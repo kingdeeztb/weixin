@@ -40,7 +40,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.14.3",
+  "libVersion": "2.14.4",
   "appid": "wxae7766a7d90ee552",
   "projectname": "mini_tianqi",
   "debugOptions": {
