@@ -8,7 +8,7 @@
 # 图片素材
 源自网络
 # 小程序演示
-请自行微信搜索 "芷若萱姿+",打开即可看到最新版小程序.
+请自行微信搜索 "芷若萱姿+",(2021年1月28日改为"青柚天气")打开即可看到最新版小程序.
 # 程序运行图
 ![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165515_com.tencent.mm.jpg)
 ![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165519_com.tencent.mm.jpg)
@@ -19,8 +19,5 @@
 ![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165559_com.tencent.mm.jpg)
 ![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165603_com.tencent.mm.jpg)
 ![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165606_com.tencent.mm.jpg)
-![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165614_com.tencent.mm.jpg)
-![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165620_com.tencent.mm.jpg)
-![image](https://github.com/kingdeeztb/weixin/blob/main/pic_temp/Screenshot_20210128_165624_com.tencent.mm.jpg)
 # 结束语
 感谢大家的支持!感谢对"芷若萱姿+"微信天气小程序的支持.未尽事宜,请联系作者.
